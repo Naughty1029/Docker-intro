@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  httpd:
+    image: httpd:2.4
+    ports:
+      - 8080:80
+    volumes:
+      - ./apache:/usr/local/apache2/htdocs
+    working_dir: /usr/local/apache2/htdocs
